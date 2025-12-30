@@ -1,0 +1,66 @@
+AHCN - Dual Attention Demonstration
+
+
+
+======================================================================
+AHCN - Dual Attention Demonstration
+======================================================================
+
+Device: cuda
+
+1️⃣  BlockSparse Attention (Default - Fast)
+
+======================================================================
+AHCN Configuration
+======================================================================
+Attention Type:       block_sparse
+Attention Class:      BlockSparseAttention
+Number of Scales:     3
+Scale Sizes:          [2048, 512, 128]
+======================================================================
+
+   Input:  torch.Size([2, 4096, 512])
+   Output: torch.Size([2, 4096, 512])
+   ✓ BlockSparse working!
+
+2️⃣  Hierarchical Attention (Better Scaling)
+
+======================================================================
+AHCN Configuration
+======================================================================
+Attention Type:       hierarchical
+Attention Class:      HierarchicalFlashAttention
+Number of Scales:     3
+Scale Sizes:          [2048, 512, 128]
+======================================================================
+
+   Input:  torch.Size([2, 4096, 512])
+   Output: torch.Size([2, 4096, 512])
+   ✓ Hierarchical working!
+
+3️⃣  Auto Attention (Smart Selection)
+
+======================================================================
+AHCN Configuration
+======================================================================
+Attention Type:       auto
+Attention Class:      BlockSparseAttention
+Number of Scales:     3
+Scale Sizes:          [2048, 512, 128]
+Auto Switch At:       130,000 tokens
+  <130,000:  BlockSparseAttention
+  ≥130,000: HierarchicalFlashAttention
+======================================================================
+
+   Short Input (16K):  torch.Size([2, 16384, 512])
+   Output:             torch.Size([2, 16384, 512])
+   → Using BlockSparse (fast)
+
+======================================================================
+✅ All attention mechanisms working!
+======================================================================
+
+💡 Usage Recommendations:
+   • General use:           attention_type='block_sparse'
+   • Extreme long context:  attention_type='hierarchical'
+   • Mixed workloads:       attention_type='auto'
