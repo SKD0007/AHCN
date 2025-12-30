@@ -33,7 +33,7 @@ context sequences (1M+ tokens) with sub-linear computational complexity.
 
 ## Patent Information
 
-**Application Number:** 63/XXXXXX  
+**Application Number:** 63/950,423  
 **Filing Date:** December 29, 2025  
 **Inventor:** Sai Kamal Doss Ambalapattil  
 **Status:** Provisional Patent Application Filed
