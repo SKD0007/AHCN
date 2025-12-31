@@ -240,6 +240,28 @@ Best for:
 ⚠️ Limitations Identified
 Video Duration Testing : Issue: All models Similar 
 
+## ✅ Proven Capabilities
+
+### Image Processing
+- [x] **289× faster than ViT** at 4K resolution (31.2ms vs 9006.2ms)
+- [x] **Real-time 4K processing** (31ms latency) vs multi-second delays (ViT)
+- [x] **CNN-like speeds with global attention** - best of both worlds
+- [x] Handles up to **4096×4096 resolution** efficiently
+- [x] Consistent performance across all resolutions
+
+### Video Processing
+- [x] **2.6× faster than 3D-CNN** (100.5ms vs 259.8ms @ 360p/5s)
+- [x] **34% less memory than 3D-CNN** (6391MB vs 9676MB)
+- [x] Works across **360p, 480p, and 720p** resolutions
+- [x] ViT completely **fails on video** tasks
+- [x] Significantly better **speed AND memory** efficiency
+
+### Batch Processing
+- [x] **78% of CNN throughput** (1025 vs 1311 img/s)
+- [x] **5.3× faster than ViT** on batch tasks
+- [x] Handles **batch size up to 128** successfully
+- [x] Competitive with specialized architectures
+      
 
 ## About
 
