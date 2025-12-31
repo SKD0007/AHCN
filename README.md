@@ -296,6 +296,6 @@ All rights reserved.
 
 ## License
 
-Copyright © 2025 Sai Kamal Doss Ambalapattil. All Rights Reserved.
+Copyright © 2025 SKDOSS Pvt Ltd. All Rights Reserved.
 
 
