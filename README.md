@@ -189,7 +189,7 @@ Key Finding: AHCN-BlockSparse achieves 289× faster inference than Vision Transf
 
 
 #### Visual Performance Comparison
-
+────────────────────────────────────────────────────────
 ```
 IMAGE LATENCY @ 4K (lower is better):
 ────────────────────────────────────────────────────────
@@ -213,20 +213,21 @@ AHCN-Hierarchical ███ 226 img/s
 ViT               ███ 194 img/s
 ```
 
-
-## Memory Efficiency
-
+### Memory Efficiency
+────────────────────────────────────────────────────────
+```
 Image @ 4K:
-ViT              ▓▓▓▓▓▓▓▓▓▓ 1431 MB (most efficient)
-AHCN-BlockSparse ▓▓▓▓▓▓▓▓▓▓▓▓▓ 1791 MB (+25%)
+ViT               ▓▓▓▓▓▓▓▓▓▓ 1431 MB (most efficient)
+AHCN-BlockSparse  ▓▓▓▓▓▓▓▓▓▓▓▓▓ 1791 MB (+25%)
 AHCN-Hierarchical ▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 1846 MB (+29%)
-CNN              ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 2268 MB (+59%)
+CNN               ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 2268 MB (+59%)
 
 Video @ 360p/5s:
-AHCN-BlockSparse ▓▓▓▓▓▓▓▓▓▓▓▓▓ 6391 MB (most efficient) ⭐
+AHCN-BlockSparse  ▓▓▓▓▓▓▓▓▓▓▓▓▓ 6391 MB (most efficient) ⭐
 AHCN-Hierarchical ▓▓▓▓▓▓▓▓▓▓▓▓▓ 6446 MB (+1%)
-3D-CNN           ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 9676 MB (+51%)
-
+3D-CNN            ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 9676 MB (+51%)
+```
+────────────────────────────────────────────────────────
 
 ## AHCN-BlockSparse (Overall Winner)
 Best for:
