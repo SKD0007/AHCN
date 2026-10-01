@@ -1,25 +1,56 @@
-## 🔷 Adaptive Hierarchical Context Network (AHCN) — Architecture Overview
+# Adaptive Hierarchical Context Network (AHCN)
+
+**A patent-pending neural network architecture for very long context: 1M+ tokens on a single 12 GB GPU.**
+
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+![Patent pending](https://img.shields.io/badge/Patent-pending%20(US%2063%2F950%2C423)-orange)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.x-ee4c2c)
+
+Created by **Sai Kamal Doss Ambalapattil (SKDOSS)** · © 2025-2026 SKDOSS Pvt Ltd
+
+---
+
+## Overview
 
 AHCN is a general-purpose neural network architecture designed to process very large context spaces efficiently while preserving information fidelity.
-Unlike conventional transformers or CNN-style models, AHCN treats context as a managed, hierarchical resource rather than a flat sequence or grid.
+Unlike conventional transformers or CNN-style models, AHCN treats context as a **managed, hierarchical resource** rather than a flat sequence or grid.
 
 The architecture is modality-agnostic and supports text, images, video, and other sequential or spatial data through the same core principles.
 
-**AHCN introduces a new way to think about neural networks:**
-not as flat attention graphs, but as structured systems that manage, route, and preserve context intelligently.
+AHCN introduces a new way to think about neural networks: not as flat attention graphs, but as structured systems that **manage, route, and preserve context** intelligently.
 
-⚠️ **PATENT PENDING**
-- US Provisional Patent Application No. 63/950,423
-- Filed: Dec 29 2025
-- Status: Patent Pending
+### Key innovations (patent pending)
 
-**CONFIDENTIAL - Do Not Distribute**
+- **Position-aware retrieval with boundary preservation**
+- **Scatter-back processing architecture**
+- **Dual-mode attention system:** BlockSparse for speed, Hierarchical for scaling, selected automatically by context length
+- **Multi-scale adaptive routing**
 
-This repository contains patent-pending technology. Unauthorized use, 
-reproduction, or distribution is prohibited.
+## Repository contents
 
----  Performance Comparion With Transfomer
-## Performance Comparison
+| File | What it is |
+|---|---|
+| `AdaptiveHierarchicalContextNetwork.py` | Core AHCN model (v1.0): position-aware retrieval, residual connections, block-sparse attention, built-in benchmark |
+| `AHCN_Dual_Attention.py` | AHCN v2.0 with dual attention (BlockSparse + Hierarchical) and automatic selection |
+| `HierarchicalFlashAttention.py` | Multi-level attention (token → cluster → master) with switchable state |
+| `Vision_AHCN.py` | AHCN applied to images and video via patch tokenization |
+| `extreme_benchmark_12gb.py` | Full benchmark suite: AHCN vs CNN, ViT and 3D-CNN on images, video and batches |
+| `AHCN vs Transformer`, `Dual Attention Demo` | Saved console output of the benchmark and demo runs |
+
+## Quick start
+
+Requires Python 3.9+, PyTorch 2.x and an NVIDIA GPU (CUDA). The benchmarks were run on a 12 GB RTX 3080 Ti.
+
+```bash
+pip install -r requirements.txt
+
+python AdaptiveHierarchicalContextNetwork.py   # AHCN vs Transformer benchmark
+python AHCN_Dual_Attention.py                  # dual attention demo
+python Vision_AHCN.py                          # image and video demo
+python extreme_benchmark_12gb.py               # full vision/video benchmark (long run)
+```
+
+## Performance comparison: AHCN vs Transformer
 
 ### 🚀 AHCN (Adaptive Hierarchical Context Network)
 
@@ -261,41 +292,41 @@ Video Duration Testing : Issue: All models Similar
 - [x] **5.3× faster than ViT** on batch tasks
 - [x] Handles **batch size up to 128** successfully
 - [x] Competitive with specialized architectures
-      
-
-## About
-
-AHCN is a novel neural network architecture for processing extended 
-context sequences (1M+ tokens) with sub-linear computational complexity.
-
-### Key Innovations (Patent Pending)
-- Position-Aware Retrieval with Boundary Preservation
-- Scatter-Back Processing Architecture
-- Dual-Mode Attention System
-- Multi-Scale Adaptive Routing
-
-### Performance
-- 99.93% information preservation
-- 1M+ token capacity
-- O(n^0.45) empirical scaling
-- 625K tokens/second throughput
-
----
-
-## Patent Information
-
-**Application Number:** 63/950,423  
-**Filing Date:** December 29, 2025  
-**Inventor:** Sai Kamal Doss Ambalapattil  
-**Status:** Provisional Patent Application Filed
-
-**Notice:** This technology is protected by pending U.S. patent rights. 
-All rights reserved.
 
 ---
 
 ## License
 
-Copyright © 2025 SKDOSS Pvt Ltd. All Rights Reserved.
+AHCN is licensed under the **[Apache License 2.0](LICENSE)**.
 
+**You may** use, modify and distribute AHCN, including commercially, as long as you:
 
+- **give credit:** keep the copyright notice, the [`NOTICE`](NOTICE) file and the license text with any copy or derived work;
+- **mark your changes:** state clearly in files you modified that you changed them;
+- **don't use the names** "AHCN", "Adaptive Hierarchical Context Network" or "SKDOSS" to endorse your own product, beyond describing where the work came from.
+
+The software is provided "as is", without warranty of any kind (sections 7 and 8 of the license).
+
+## Patent
+
+The AHCN architecture is the subject of **U.S. Provisional Patent Application No. 63/950,423**, filed **December 29, 2025** (patent pending). Inventor: **Sai Kamal Doss Ambalapattil**.
+
+Under section 3 of the Apache License 2.0, each recipient of this repository receives a patent license from the contributors for their contributions to this work, on the terms in that section. That license ends for anyone who brings a patent lawsuit claiming this work infringes a patent. No other patent rights are granted. See [`NOTICE`](NOTICE).
+
+## Citation
+
+If you use AHCN in research or a product, please cite it:
+
+```bibtex
+@software{ambalapattil_ahcn_2025,
+  author  = {Ambalapattil, Sai Kamal Doss},
+  title   = {Adaptive Hierarchical Context Network (AHCN)},
+  year    = {2025},
+  url     = {https://github.com/SKD0007/AHCN},
+  note    = {Patent pending, U.S. Provisional Application No. 63/950,423. Apache License 2.0}
+}
+```
+
+## Author
+
+**Sai Kamal Doss Ambalapattil (SKDOSS)** · © 2025-2026 SKDOSS Pvt Ltd

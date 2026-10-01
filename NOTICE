@@ -1,0 +1,37 @@
+Adaptive Hierarchical Context Network (AHCN)
+Copyright 2025-2026 SKDOSS Pvt Ltd
+
+Inventor and author: Sai Kamal Doss Ambalapattil (SKDOSS)
+https://github.com/SKD0007/AHCN
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+If you redistribute AHCN or a work derived from it, section 4 of the License
+requires you to keep this NOTICE file (or its contents), keep the copyright and
+license notices, and mark any files you changed.
+
+
+PATENT NOTICE
+
+The AHCN architecture and methods implemented in this repository are the subject
+of U.S. Provisional Patent Application No. 63/950,423, filed December 29, 2025
+(patent pending). Inventor: Sai Kamal Doss Ambalapattil.
+
+Section 3 of the Apache License 2.0 grants each recipient of this Work a patent
+license, from each contributor, for that contributor's contributions to this Work,
+on the terms set out in that section, including its termination clause. No other
+patent rights are granted, by implication or otherwise.
+
+
+ATTRIBUTION
+
+If you use AHCN in research, products or publications, please credit
+"Adaptive Hierarchical Context Network (AHCN) by Sai Kamal Doss Ambalapattil (SKDOSS)"
+and cite this repository (see the Citation section of README.md).
+
+
+TRADEMARKS
+
+"AHCN", "Adaptive Hierarchical Context Network" and "SKDOSS" identify the original
+work and its author. The Apache License does not grant permission to use these
+names to endorse or promote derived products (section 6), other than to describe
+the origin of the work and in this NOTICE.

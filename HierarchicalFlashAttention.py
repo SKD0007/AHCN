@@ -1,3 +1,8 @@
+# Copyright 2025-2026 SKDOSS Pvt Ltd. Author: Sai Kamal Doss Ambalapattil (SKDOSS).
+# Licensed under the Apache License, Version 2.0 (see LICENSE and NOTICE).
+# Patent pending: U.S. Provisional Patent Application No. 63/950,423.
+# SPDX-License-Identifier: Apache-2.0
+
 """
 HIERARCHICAL FLASH ATTENTION
 NextGen: Multi-Level Attention with Context Switching

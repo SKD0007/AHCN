@@ -1,4 +1,9 @@
-﻿"""
+﻿# Copyright 2025-2026 SKDOSS Pvt Ltd. Author: Sai Kamal Doss Ambalapattil (SKDOSS).
+# Licensed under the Apache License, Version 2.0 (see LICENSE and NOTICE).
+# Patent pending: U.S. Provisional Patent Application No. 63/950,423.
+# SPDX-License-Identifier: Apache-2.0
+
+"""
 ADAPTIVE HIERARCHICAL CONTEXT NETWORK (AHCN) - FINAL
 Production-Ready Architecture with Dual Attention Support
 
@@ -9,7 +14,7 @@ KEY FEATURES:
 ✓ 1M+ context on 12GB GPU
 ✓ Auto-selection based on context length
 
-AUTHOR: Your research team
+AUTHOR: Sai Kamal Doss Ambalapattil (SKDOSS)
 VERSION: 2.0 - Dual Attention
 """
 
