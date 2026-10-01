@@ -327,6 +327,8 @@ If you use AHCN in research or a product, please cite it:
 }
 ```
 
-## Author
+## Author & contact
 
 **Sai Kamal Doss Ambalapattil (SKDOSS)** · © 2025-2026 SKDOSS Pvt Ltd
+
+Questions, licensing and collaboration: **[info@orynr.com](mailto:info@orynr.com)**
