@@ -6,7 +6,7 @@
 ![Patent pending](https://img.shields.io/badge/Patent-pending%20(US%2063%2F950%2C423)-orange)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.x-ee4c2c)
 
-Created by **Sai Kamal Doss Ambalapattil (SKDOSS)** · © 2025-2026 SKDOSS Pvt Ltd
+Created by **(SKDOSS)** · © 2025-2026 Pvt Ltd
 
 ---
 
