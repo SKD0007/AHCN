@@ -2,7 +2,6 @@
 
 **A patent-pending neural network architecture for very long context: 1M+ tokens on a single 12 GB GPU.**
 
-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 ![Patent pending](https://img.shields.io/badge/Patent-pending%20(US%2063%2F950%2C423)-orange)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.x-ee4c2c)
 
@@ -295,23 +294,9 @@ Video Duration Testing : Issue: All models Similar
 
 ---
 
-## License
-
-AHCN is licensed under the **[Apache License 2.0](LICENSE)**.
-
-**You may** use, modify and distribute AHCN, including commercially, as long as you:
-
-- **give credit:** keep the copyright notice, the [`NOTICE`](NOTICE) file and the license text with any copy or derived work;
-- **mark your changes:** state clearly in files you modified that you changed them;
-- **don't use the names** "AHCN", "Adaptive Hierarchical Context Network" or "SKDOSS" to endorse your own product, beyond describing where the work came from.
-
-The software is provided "as is", without warranty of any kind (sections 7 and 8 of the license).
-
 ## Patent
 
 The AHCN architecture is the subject of **U.S. Provisional Patent Application No. 63/950,423**, filed **December 29, 2025** (patent pending). Inventor: **Sai Kamal Doss Ambalapattil**.
-
-Under section 3 of the Apache License 2.0, each recipient of this repository receives a patent license from the contributors for their contributions to this work, on the terms in that section. That license ends for anyone who brings a patent lawsuit claiming this work infringes a patent. No other patent rights are granted. See [`NOTICE`](NOTICE).
 
 ## Citation
 
@@ -323,7 +308,7 @@ If you use AHCN in research or a product, please cite it:
   title   = {Adaptive Hierarchical Context Network (AHCN)},
   year    = {2025},
   url     = {https://github.com/SKD0007/AHCN},
-  note    = {Patent pending, U.S. Provisional Application No. 63/950,423. Apache License 2.0}
+  note    = {Patent pending, U.S. Provisional Application No. 63/950,423}
 }
 ```
 
@@ -331,4 +316,4 @@ If you use AHCN in research or a product, please cite it:
 
 **Sai Kamal Doss Ambalapattil (SKDOSS)** · © 2025-2026 SKDOSS Pvt Ltd
 
-Questions, licensing and collaboration: **[info@orynr.com](mailto:info@orynr.com)**
+Questions and collaboration: **[info@orynr.com](mailto:info@orynr.com)**
