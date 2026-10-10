@@ -2,7 +2,7 @@
 
 **A patent-pending neural network architecture for very long context: 1M+ tokens on a single 12 GB GPU.**
 
-![Patent pending](https://img.shields.io/badge/Patent-pending%20(US%2063%2F950%2C423)-orange)
+![Patent](https://img.shields.io/badge/Patent-pending%20(US%2063%2F950%2C423)-orange)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.x-ee4c2c)
 
 Created by **(SKDOSS)** · © 2025-2026 Pvt Ltd
